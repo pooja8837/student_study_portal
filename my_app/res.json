@@ -1,0 +1,14 @@
+
+{'type': 'video',
+ 'id': '_uQrJ0TkZlc', 
+ 'title': 'Python Tutorial - Python Full Course for Beginners', 
+ 'publishedTime': '4 years ago',
+  'duration': '6:14:07',
+   'viewCount': {'text': '37,002,685 views',
+    'short': '37M views'}, 
+    'thumbnails': [{'url': 'https://i.ytimg.com/vi/_uQrJ0TkZlc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQfkbApoaN-_QBOuiyHzWJOiziEA',
+     'width': 360, 
+     'height': 202}, 
+     {'url': 'https://i.ytimg.com/vi/_uQrJ0TkZlc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpUFKfUMVNbg8mqTcZ8UdSUjpilw', 'width': 720, 'height': 404}], 'richThumbnail': {'url': 'https://i.ytimg.com/an_webp/_uQrJ0TkZlc/mqdefault_6s.webp?du=3000&sqp=CMDm46wG&rs=AOn4CLCe8lh6S2D1UyBiGtKdG0x5DFqdNQ', 'width': 320, 'height': 180}, 'descriptionSnippet': [{'text': 'Python', 'bold': True}, {'text': ' tutorial - '}, {'text': 'Python', 'bold': True}, {'text': ' full course for beginners - Go from Zero to Hero with '}, {'text': 'Python', 'bold': True}, {'text': ' (includes machine learning & web\xa0...'}], 'channel': {'name': 'Programming with Mosh', 'id': 'UCWv7vMbMWH4-V0ZXdmDpPBA', 'thumbnails': [{'url': 'https://yt3.ggpht.com/ebu9ZksIXw0tUWBZd6rtk-It8VGSk8AdfSI_eGR-fl6WGet9LnVPngNQCmjdLJeGXpuylwYInQ=s68-c-k-c0x00ffffff-no-rj', 'width': 68, 'height': 68}], 'link': 'https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA'}, 'accessibility': {'title': 'Python Tutorial - Python Full Course for Beginners by Programming with Mosh 37,002,685 views 4 years ago 6 hours, 14 minutes', 'duration': '6 hours, 14 minutes, 7 seconds'}, 'link': 'https://www.youtube.com/watch?v=_uQrJ0TkZlc', 'shelfTitle': None}
+[06/Jan/2024 13:20:04] "POST /youtube/ HTTP/1.1" 200 5458
+[06/Jan/2024 13:20:05] "GET /youtube/ HTTP/1.1" 200 5442

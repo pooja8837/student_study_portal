@@ -1,0 +1,71 @@
+{% extends 'my_app/base.html' %} 
+{% load static %} 
+{% load crispy_forms_tags %}
+{% block content %}
+<section class='text-center container'>
+    <h2>Search Videos on YouTube</h2>
+    <p>Search for videos and select any video to open in YouTube</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+    <br>
+    {% for result in results %}
+    <a href="{{ result.link }}" target="_blank">
+        <div class="card mt-3">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="{{ result.thumbnail }}" alt="Thumbnail">
+                    </div>
+                    <div class="col-md-8">
+                        <h3>{{ result.title }}</h3>
+                        <p class="text-muted">{{ result.channel }}</p>
+                        <p>{{ result.description }}</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Duration: {{ result.duration }}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Views: {{ result.views }}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Published: {{ result.published }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</section>
+
+<style>
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+</style>
+
+{% endblock content %}

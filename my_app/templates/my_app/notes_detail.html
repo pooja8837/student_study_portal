@@ -1,0 +1,25 @@
+{% extends 'my_app/base.html' %}
+{% load static %} 
+{% block content %}
+
+<div class="container py-5">
+    {% if notes %}
+    <div class="row">
+        {% for note in notes %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">{{ note.title }}</div>
+                <div class="card-body">{{ note.description }}</div>
+                <div class="card-footer mt-auto "><a href="{% url 'my_app:delete_note' note.id %}">
+                    <i class="fa fa-trash fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <h1 class="py-5 text-center">Opps sorry! You don't have any note. Please <a href="{% url 'my_app:notes' %}" class="text-primary">Go Back</a></h1>
+    {% endif %}
+</div>
+
+{% endblock content %}
